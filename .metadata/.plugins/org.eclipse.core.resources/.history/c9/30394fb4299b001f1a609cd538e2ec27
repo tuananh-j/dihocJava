@@ -1,0 +1,45 @@
+package com.poly.dao;
+
+import java.util.List;
+
+import javax.persistence.EntityManager;
+
+import com.poly.entity.User;
+import com.poly.utils.XJPA;
+
+public class UserImpl implements UserDao {
+
+	@Override
+	public List<User> find_all() {
+		// TODO Auto-generated method stub
+		EntityManager em = XJPA.getEntityManager();
+		String jpql = "SELECT o FROM User o";
+		
+		return null;
+	}
+
+	@Override
+	public User find_id(String id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void create(User item) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void update(User item) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void delete_id(String id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}

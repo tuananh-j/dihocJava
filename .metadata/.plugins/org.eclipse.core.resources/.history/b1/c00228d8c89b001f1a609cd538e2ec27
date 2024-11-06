@@ -1,0 +1,26 @@
+package com.poly.entity;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "Users")
+public class User {
+	@Id
+	@Column(name = "Id")
+	String id;
+	@Column(name = "PassWord")
+	String password;
+	@Column(name = "Fullname")
+	String fullname;
+	@Column(name = "Email")
+	String email;
+	@Column(name = "Admin")
+	Boolean admin = false;
+	public User() {
+		
+	}
+	
+}
